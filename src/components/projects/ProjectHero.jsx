@@ -1,6 +1,7 @@
 import { ArrowUpRight } from 'lucide-react'
 import RevealOnScroll from '../ui/RevealOnScroll'
 import AwardBadge from '../ui/AwardBadge'
+import StatusBadge from '../ui/StatusBadge'
 import { GithubIcon } from '../ui/BrandIcons'
 
 export default function ProjectHero({ project }) {
@@ -8,13 +9,13 @@ export default function ProjectHero({ project }) {
     { label: 'Role', value: project.role },
     { label: 'Year', value: project.year },
     { label: 'Platform', value: project.type },
-  ]
+  ].filter((m) => m.value)
 
   return (
     <section className="container-page pt-14 md:pt-24 pb-14">
       <RevealOnScroll>
         <p className="text-xs tracking-[0.2em] text-[var(--color-ink-faint)] uppercase mb-6">
-          {project.number} / Case Study
+          {project.number ? `${project.number} / Case Study` : 'Case Study'}
         </p>
         <h1 className="font-[var(--font-display)] text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.98] text-[var(--color-ink)]">
           {project.title}
@@ -23,7 +24,10 @@ export default function ProjectHero({ project }) {
           {project.tagline}
         </p>
 
-        {project.award && <AwardBadge label="Best Product" sublabel="Showcase" className="mt-6" />}
+        <div className="flex flex-wrap items-center gap-4 mt-6">
+          <StatusBadge status={project.status} />
+          {project.award && <AwardBadge label="Best Product" sublabel="Showcase" />}
+        </div>
 
         <div className="flex flex-wrap gap-x-12 gap-y-6 mt-12 pt-8 border-t border-[var(--color-border)]">
           {meta.map((m) => (

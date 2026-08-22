@@ -26,9 +26,7 @@ export default function ProjectVisual({ project, className = '', imageClassName 
         <ProjectImage
           src={project.image}
           alt={`${project.title} application screenshot`}
-          label={project.title.toUpperCase()}
-          sublabel={project.type}
-          className={`w-full ${imageClassName}`}
+          className={`absolute inset-0 w-full h-full object-top ${imageClassName}`}
         />
       </BrowserFrame>
     )
@@ -38,8 +36,6 @@ export default function ProjectVisual({ project, className = '', imageClassName 
     <ProjectImage
       src={project.image}
       alt={`${project.title} preview`}
-      label={project.title.toUpperCase()}
-      sublabel={project.type}
       className={`w-full ${className} ${imageClassName}`}
     />
   )

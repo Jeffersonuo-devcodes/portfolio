@@ -24,7 +24,7 @@ export default function Home() {
   useDocumentMeta({ title: site.seoDefaultTitle, description: site.seoDefaultDescription })
 
   const featured = projects.filter((p) => p.featured)
-  const credibleRoles = experience.filter((job) => job.company === 'SystemSpecs / Remita' || job.company === 'Renasterdev')
+  const credibleRoles = experience.slice(0, 2)
 
   return (
     <>
@@ -38,7 +38,7 @@ export default function Home() {
             className="lg:col-span-7 order-2 lg:order-1"
           >
             <p className="text-xs font-medium tracking-[0.2em] text-[var(--color-accent)] uppercase mb-7">
-              Jefferson Uche-Okoro / Full-Stack Developer
+              Jefferson Uche-Okoro / {site.roleShort}
             </p>
             <h1 className="font-[var(--font-display)] text-[clamp(3rem,6.2vw,6.5rem)] leading-[0.98] text-[var(--color-ink)]">
               I build digital products
@@ -47,9 +47,9 @@ export default function Home() {
               <span className="text-[var(--color-accent)]">idea to deployment.</span>
             </h1>
             <p className="mt-8 max-w-lg text-base md:text-lg text-[var(--color-ink-muted)] leading-relaxed">
-              Full-stack developer with an engineering background, building thoughtful web and
-              mobile experiences across interfaces, APIs, databases, authentication and
-              deployment.
+              Full-stack and mobile software engineer with an engineering background, building
+              thoughtful web and mobile experiences across interfaces, APIs, databases,
+              authentication and deployment.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mt-11">

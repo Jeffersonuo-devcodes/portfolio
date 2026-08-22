@@ -2,6 +2,7 @@ const statusColor = {
   Active: 'var(--color-active)',
   Featured: 'var(--color-accent)',
   Live: 'var(--color-active)',
+  'In Development': 'var(--color-accent)',
   'Previous Project': 'var(--color-ink-faint)',
   Archived: 'var(--color-ink-faint)',
 }

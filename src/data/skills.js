@@ -2,34 +2,62 @@
 export const skillGroups = [
   {
     category: 'Front End',
-    items: ['React', 'JavaScript', 'TypeScript', 'Angular', 'HTML', 'CSS', 'Tailwind CSS', 'Bootstrap', 'Material UI'],
+    items: [
+      'React',
+      'Next.js',
+      'Angular',
+      'JavaScript',
+      'TypeScript',
+      'HTML',
+      'CSS',
+      'Tailwind CSS',
+      'Bootstrap',
+      'Material UI',
+      'shadcn/ui',
+    ],
   },
   {
     category: 'Mobile',
-    items: ['React Native', 'Expo', 'Swift', 'SwiftUI', 'Kotlin', 'Jetpack Compose'],
+    items: ['React Native', 'Expo', 'Flutter', 'Swift', 'SwiftUI', 'Kotlin', 'Jetpack Compose'],
   },
   {
     category: 'Backend',
-    items: ['Node.js', 'Express', 'PHP', 'Python', 'SQL'],
+    items: ['Node.js', 'Express', 'REST APIs', 'GraphQL', 'JWT Authentication', 'OAuth', 'PHP', 'Python', 'SQL'],
   },
   {
     category: 'Databases & Services',
-    items: ['MongoDB', 'SQL', 'Firebase', 'Firestore', 'REST APIs'],
+    items: ['PostgreSQL', 'MongoDB', 'MySQL', 'Firebase', 'Firestore', 'Redis'],
   },
   {
     category: 'Infrastructure & Deployment',
-    items: ['Git', 'GitHub', 'GitLab', 'CI/CD', 'Docker', 'AWS EC2', 'Apache', 'Vercel', 'Netlify', 'Render'],
+    items: [
+      'Git',
+      'GitHub',
+      'GitLab',
+      'CI/CD',
+      'Docker',
+      'AWS (Cognito, S3, EC2)',
+      'Vercel',
+      'Firebase Hosting',
+      'Netlify',
+      'Render',
+    ],
+  },
+  {
+    category: 'Testing & Tools',
+    items: ['Jest', 'React Testing Library', 'Postman', 'Vite', 'Webpack', 'Nx Monorepo'],
   },
   {
     category: 'Design & Product',
-    items: ['Figma', 'Responsive Design', 'UI Implementation', 'UX Collaboration', 'Product Development'],
+    items: ['Figma', 'System Design', 'API Design', 'Responsive Design', 'Accessibility', 'Product Development'],
   },
 ]
 
 export const journey = [
   'Electrical & Electronics Engineering',
-  'Front-End Development',
-  'Client Web Development',
+  'Frontend Engineering',
+  'Enterprise Software',
   'Full-Stack Development',
-  'Mobile Product Development',
+  'Mobile Development',
+  'Product Engineering',
 ]

@@ -1,20 +1,19 @@
 // Global site configuration: name, resume, SEO defaults.
 export const site = {
   name: 'Jefferson Uche-Okoro',
-  role: 'Full-Stack Developer',
+  role: 'Full-Stack & Mobile Software Engineer',
+  roleShort: 'Full-Stack & Mobile Engineer',
+  location: 'Burnaby, BC',
   logoText: 'JEFFERSON.',
 
-  // TODO: place the resume PDF at public/resume/Jefferson-Uche-Okoro-Resume.pdf
-  // and flip `resumeAvailable` to true. The download button stays hidden until then
-  // so no broken link is ever shown.
   resumeUrl: '/resume/Jefferson-Uche-Okoro-Resume.pdf',
-  resumeAvailable: false,
+  resumeAvailable: true,
 
   portraitAvailable: true,
   portraitSrc: '/images/jefferson.jpg',
   portraitAlt: 'Portrait of Jefferson Uche-Okoro',
 
-  seoDefaultTitle: 'Jefferson Uche-Okoro | Full-Stack Developer',
+  seoDefaultTitle: 'Jefferson Uche-Okoro | Full-Stack & Mobile Software Engineer',
   seoDefaultDescription:
-    'Portfolio of Jefferson Uche-Okoro, a full-stack developer with an engineering background building modern web and mobile applications using React, React Native, Node.js and modern backend technologies.',
+    'Portfolio of Jefferson Uche-Okoro, a full-stack and mobile software engineer building production web and mobile applications across frontend, backend, APIs, databases and cloud deployment.',
 }

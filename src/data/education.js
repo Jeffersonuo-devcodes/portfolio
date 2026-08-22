@@ -1,7 +1,7 @@
 export const education = [
   {
     stage: 'Engineering Foundation',
-    dates: 'TODO: confirm years attended', // Do not invent — leave configurable until confirmed.
+    dates: '2017 – 2022',
     institution: 'Covenant University',
     credential: 'Bachelor of Engineering (B.Eng.)',
     focus: 'Electrical & Electronics Engineering',
@@ -9,7 +9,7 @@ export const education = [
   },
   {
     stage: 'Software Specialization',
-    dates: 'TODO: confirm years attended',
+    dates: '2025 – 2026',
     institution: 'Langara College',
     credential: 'Post-Degree Diploma',
     focus: 'Web & Mobile App Development — Developer Stream',

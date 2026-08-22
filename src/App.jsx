@@ -8,11 +8,13 @@ import Home from './pages/Home'
 import Work from './pages/Work'
 import About from './pages/About'
 import Engineering from './pages/Engineering'
+import EngineeringArticle from './pages/EngineeringArticle'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 import Curio from './pages/work/Curio'
 import ShelfSafe from './pages/work/ShelfSafe'
 import StreetReads from './pages/work/StreetReads'
+import Iklothing from './pages/work/Iklothing'
 
 export default function App() {
   const location = useLocation()
@@ -29,8 +31,10 @@ export default function App() {
               <Route path="/work/curio" element={<Curio />} />
               <Route path="/work/shelfsafe" element={<ShelfSafe />} />
               <Route path="/work/street-reads" element={<StreetReads />} />
+              <Route path="/work/iklothing" element={<Iklothing />} />
               <Route path="/about" element={<About />} />
               <Route path="/engineering" element={<Engineering />} />
+              <Route path="/engineering/:slug" element={<EngineeringArticle />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

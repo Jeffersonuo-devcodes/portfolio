@@ -1,11 +1,9 @@
-import { ArrowUpRight } from 'lucide-react'
 import SectionHeading from '../components/ui/SectionHeading'
-import StatusBadge from '../components/ui/StatusBadge'
 import TechnologyTag from '../components/ui/TechnologyTag'
 import RevealOnScroll from '../components/ui/RevealOnScroll'
 import ProjectCard from '../components/projects/ProjectCard'
 import ProjectImage from '../components/projects/ProjectImage'
-import { projects, clientWork, previousWork, labs } from '../data/projects'
+import { projects, communityWork, inDevelopment, previousWork, labs } from '../data/projects'
 import { site } from '../data/site'
 import { useDocumentMeta } from '../hooks/useDocumentMeta'
 
@@ -23,54 +21,41 @@ export default function Work() {
         description="A collection of products, client work and earlier projects that reflect how my development skills have evolved."
       />
 
-      {/* Featured Products */}
+      {/* Selected Work */}
       <section className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
         {projects.map((project) => (
           <ProjectCard key={project.slug} project={project} />
         ))}
       </section>
 
-      {/* Client & Community Work */}
+      {/* Community Work */}
       <section className="mt-28 md:mt-36">
         <RevealOnScroll>
-          <h2 className="font-[var(--font-display)] text-2xl md:text-3xl text-[var(--color-ink)] mb-10">
-            Client &amp; Community Work
-          </h2>
+          <h2 className="font-[var(--font-display)] text-2xl md:text-3xl text-[var(--color-ink)]">Community Work</h2>
+          <p className="text-sm text-[var(--color-ink-muted)] mt-2 max-w-lg">
+            Delivered through client and community projects alongside my own products.
+          </p>
         </RevealOnScroll>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {clientWork.map((item) => (
-            <RevealOnScroll key={item.slug} className="rounded-2xl border border-[var(--color-border)] p-6">
-              <ProjectImage
-                src={item.image}
-                alt={`${item.title} preview`}
-                label={item.title.toUpperCase()}
-                sublabel={item.type}
-                className="w-full aspect-[16/9] mb-5"
-              />
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h3 className="font-[var(--font-display)] text-lg text-[var(--color-ink)]">{item.title}</h3>
-                  <p className="text-sm text-[var(--color-ink-muted)] mt-1">{item.type}</p>
-                </div>
-                <StatusBadge status={item.status} />
-              </div>
-              {item.liveUrl ? (
-                <a
-                  href={item.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm text-[var(--color-ink)] hover:text-[var(--color-accent)] mt-5 transition-colors"
-                >
-                  View Live Project
-                  <ArrowUpRight size={14} />
-                </a>
-              ) : (
-                <p className="text-xs text-[var(--color-ink-faint)] mt-5 tracking-wide uppercase">
-                  Live URL coming soon
-                </p>
-              )}
-            </RevealOnScroll>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-10 max-w-2xl">
+          {communityWork.map((project) => (
+            <ProjectCard key={project.slug} project={project} />
+          ))}
+        </div>
+      </section>
+
+      {/* In Development */}
+      <section className="mt-28 md:mt-36">
+        <RevealOnScroll>
+          <h2 className="font-[var(--font-display)] text-2xl md:text-3xl text-[var(--color-ink)]">In Development</h2>
+          <p className="text-sm text-[var(--color-ink-muted)] mt-2 max-w-lg">
+            What I'm actively building right now, alongside the work above.
+          </p>
+        </RevealOnScroll>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-10 max-w-2xl">
+          {inDevelopment.map((project) => (
+            <ProjectCard key={project.slug} project={project} />
           ))}
         </div>
       </section>

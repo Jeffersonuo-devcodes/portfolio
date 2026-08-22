@@ -1,28 +1,43 @@
-// Professional experience timeline, most recent first.
-// Dates are intentionally left as TODO where not confirmed — never fabricate employment dates.
-
+// Professional experience timeline, most recent first. Sourced directly from Jefferson's resume.
 export const experience = [
   {
-    company: 'Renasterdev',
-    role: 'Co-Founder / Developer',
-    dates: 'TODO: confirm dates',
-    areas: ['Web development', 'Application development', 'Client projects', 'Branding / digital work', 'E-commerce', 'Automation'],
+    company: 'RenastereDev Canada',
+    role: 'Senior Frontend Engineer',
+    dates: 'May 2025 – Present',
+    areas: ['React', 'Next.js', 'Component Libraries', 'Design Systems', 'Core Web Vitals', 'CI/CD'],
     description:
-      'Co-founded a small development studio building websites, applications and digital work for clients — spanning e-commerce builds, automation and brand-facing web presence.',
+      'Lead frontend architecture decisions for production React and Next.js platforms, building reusable component libraries and standardizing templates, linting and CI/CD across projects.',
   },
   {
-    company: 'Confidence Cargos Ltd',
-    role: 'Developer & Data Analyst',
-    dates: 'TODO: confirm dates',
-    areas: [], // TODO: add confirmed technologies/areas of work
-    description: 'TODO: add confirmed responsibilities and data/software work for this role.',
+    company: 'HNG Tech',
+    role: 'Full Stack Developer',
+    dates: 'Aug 2024 – Apr 2025',
+    areas: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT Authentication', 'Role-Based Access Control'],
+    description:
+      'Built full-stack MERN applications with end-to-end feature ownership — REST APIs, JWT authentication, and admin dashboards with role-based access control, delivered through Agile sprints.',
   },
   {
-    company: 'SystemSpecs / Remita',
-    role: 'Front-End Developer Intern',
-    dates: 'TODO: confirm dates',
-    areas: ['Angular', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Material UI', 'GitLab', 'CI/CD', 'Email templates', 'Production website maintenance'],
+    company: 'Remita',
+    role: 'Frontend Developer',
+    dates: 'Mar 2023 – May 2024',
+    areas: ['Angular', 'Design Systems', 'REST APIs', 'i18n', 'Nx Monorepo', 'Unit Testing'],
     description:
-      'Contributed to front-end development and maintenance of production websites, working with Angular and Bootstrap/Material UI, and collaborating through GitLab CI/CD pipelines.',
+      'Built reusable Angular components and design system primitives for fintech applications, integrated REST APIs with backend engineers, and contributed to an Nx monorepo migration.',
+  },
+  {
+    company: 'RenastereDev',
+    role: 'Co-Founder / Lead Product Engineer',
+    dates: 'Nov 2021 – Present',
+    areas: ['React', 'Next.js', 'Node.js', 'MongoDB', 'Client Discovery', 'CI/CD'],
+    description:
+      'Co-founded a product studio delivering 15+ production websites, branding systems and e-commerce platforms — owning client discovery, technical solutions and the full project lifecycle.',
+  },
+  {
+    company: 'Huawei',
+    role: 'Software Engineering Intern',
+    dates: 'May 2021 – Nov 2021',
+    areas: ['JavaScript', 'Python', 'QA', 'Technical Documentation'],
+    description:
+      'Developed internal automation tools, debugged enterprise-grade applications, and executed QA workflows and technical documentation for engineering processes.',
   },
 ]

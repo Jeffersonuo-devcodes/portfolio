@@ -1,6 +1,10 @@
-// Add/remove certifications here. Kept intentionally lightweight — this list should
-// never outweigh the Experience or Work sections in visual prominence.
+// Kept intentionally lightweight — should never outweigh Experience or Work in prominence.
 export const certifications = [
-  // Example shape — uncomment and fill in when a real certification is confirmed:
-  // { name: 'Certification Name', issuer: 'Issuing Organization', year: '2025' },
+  { name: 'ALX Software Engineering', issuer: 'ALX' },
+  { name: 'JavaScript Algorithms & Data Structures', issuer: 'freeCodeCamp' },
+  { name: 'Google Crash Course on Python', issuer: 'Google' },
+  { name: 'Responsive Web Design', issuer: 'freeCodeCamp' },
+  { name: 'Engineering Project Management', issuer: '' },
+  { name: 'Technical Writing', issuer: '' },
+  { name: 'Introduction to Cybersecurity', issuer: '' },
 ]

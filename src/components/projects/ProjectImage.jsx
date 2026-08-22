@@ -1,14 +1,11 @@
 import { useState } from 'react'
-import ImagePlaceholder from '../ui/ImagePlaceholder'
 
-// Tries the real project image first; if it 404s (asset not supplied yet), falls back
-// to the typographic placeholder automatically — no manual flag to keep in sync.
-export default function ProjectImage({ src, alt, label, sublabel, className = '' }) {
+// Renders the real project image if one is supplied and loads successfully. If no image is
+// configured, or it fails to load, this renders nothing — no fabricated placeholder graphic.
+export default function ProjectImage({ src, alt, className = '' }) {
   const [failed, setFailed] = useState(false)
 
-  if (!src || failed) {
-    return <ImagePlaceholder label={label} sublabel={sublabel} className={className} />
-  }
+  if (!src || failed) return null
 
   return (
     <img
