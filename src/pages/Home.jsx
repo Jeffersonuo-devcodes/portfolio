@@ -13,11 +13,11 @@ import { site } from '../data/site'
 import { useDocumentMeta } from '../hooks/useDocumentMeta'
 
 const stack = [
-  { category: 'Frontend', items: ['React', 'Angular', 'JavaScript', 'TypeScript', 'Tailwind CSS'] },
-  { category: 'Backend', items: ['Node.js', 'Express', 'PHP', 'Python', 'SQL'] },
-  { category: 'Mobile', items: ['React Native', 'Expo', 'SwiftUI', 'Jetpack Compose'] },
-  { category: 'Data', items: ['MongoDB', 'SQL', 'Firebase', 'Firestore'] },
-  { category: 'Infrastructure', items: ['AWS', 'Docker', 'Git', 'GitHub', 'GitLab', 'CI/CD', 'Vercel', 'Render'] },
+  { category: 'Frontend', items: ['React', 'Next.js', 'Angular', 'TypeScript', 'Tailwind CSS'] },
+  { category: 'Backend', items: ['Node.js', 'Express', 'REST APIs', 'GraphQL', 'JWT'] },
+  { category: 'Mobile', items: ['React Native', 'Expo', 'Flutter', 'Jetpack Compose'] },
+  { category: 'Data', items: ['MongoDB', 'PostgreSQL', 'Firebase', 'Redis'] },
+  { category: 'Cloud & DevOps', items: ['AWS', 'Vercel', 'Docker', 'GitHub Actions'] },
 ]
 
 export default function Home() {
@@ -47,9 +47,8 @@ export default function Home() {
               <span className="text-[var(--color-accent)]">idea to deployment.</span>
             </h1>
             <p className="mt-8 max-w-lg text-base md:text-lg text-[var(--color-ink-muted)] leading-relaxed">
-              Full-stack and mobile software engineer with an engineering background, building
-              thoughtful web and mobile experiences across interfaces, APIs, databases,
-              authentication and deployment.
+              I build web and mobile products across interfaces, APIs, databases and deployment,
+              with a strong foundation in frontend engineering.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mt-11">

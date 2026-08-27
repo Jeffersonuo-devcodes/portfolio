@@ -46,6 +46,7 @@ export default function Contact() {
           I'm interested in software engineering opportunities, thoughtful products, challenging
           development problems and collaborations worth building.
         </p>
+        <p className="mt-4 text-sm text-[var(--color-ink-faint)]">Based in {site.location}.</p>
       </RevealOnScroll>
 
       <div className="mt-16 flex flex-col">

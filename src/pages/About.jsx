@@ -28,16 +28,18 @@ export default function About() {
 
         <RevealOnScroll delay={0.08} className="mt-10 max-w-2xl space-y-5 text-base md:text-lg text-[var(--color-ink-muted)] leading-relaxed">
           <p>
-            I'm a full-stack and mobile software engineer with an engineering background who
-            enjoys working across the product stack — from translating designs into responsive
-            interfaces to building APIs, authentication systems, database-backed applications and
-            mobile experiences.
+            I'm a full-stack and mobile software engineer with a strong frontend foundation and
+            growing ownership across backend APIs, databases, cloud deployment and mobile
+            applications — from translating designs into responsive interfaces to building
+            authentication systems and database-backed products.
           </p>
           <p>
             My journey has taken me through electrical engineering, front-end development,
-            enterprise fintech software, full-stack product delivery and mobile development. That
-            progression has shaped how I approach software today: understand the problem, build
-            intentionally and make the final experience feel complete.
+            enterprise fintech software, full-stack product delivery and mobile development.
+            Frontend engineering remains one of my strongest foundations — it's just no longer
+            the whole picture. That progression has shaped how I approach software today:
+            understand the problem, build intentionally and make the final experience feel
+            complete.
           </p>
         </RevealOnScroll>
       </section>
@@ -56,6 +58,9 @@ export default function About() {
               >
                 <div className="md:col-span-3">
                   <p className="text-sm text-[var(--color-ink-faint)]">{job.dates}</p>
+                  {job.location && (
+                    <p className="text-xs text-[var(--color-ink-faint)] mt-1">{job.location}</p>
+                  )}
                 </div>
                 <div className="md:col-span-4">
                   <h3 className="font-[var(--font-display)] text-xl text-[var(--color-ink)]">{job.company}</h3>

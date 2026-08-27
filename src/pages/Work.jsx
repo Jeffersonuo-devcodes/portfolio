@@ -75,14 +75,15 @@ export default function Work() {
               <ProjectImage
                 src={item.image}
                 alt={`${item.title} archive placeholder`}
-                label={item.title.toUpperCase()}
-                sublabel={item.type}
                 className="w-full aspect-square mb-5"
               />
               <h3 className="font-[var(--font-display)] text-base text-[var(--color-ink)]">{item.title}</h3>
               <p className="text-xs text-[var(--color-ink-muted)] mt-1">{item.type}</p>
               {item.industry && (
                 <p className="text-xs text-[var(--color-ink-faint)] mt-0.5">{item.industry}</p>
+              )}
+              {item.description && (
+                <p className="text-xs text-[var(--color-ink-muted)] leading-relaxed mt-3">{item.description}</p>
               )}
               {item.technologies.length > 0 && (
                 <div className="flex flex-wrap gap-1.5 mt-4">

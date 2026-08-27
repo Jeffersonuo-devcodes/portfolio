@@ -160,14 +160,14 @@ export const communityWork = [
     description:
       "UMYIDI is a nonprofit website built for the Umumazi Youth Development Initiative, presenting the organization's mission, programs and ways to get involved.",
     overview:
-      "UMYIDI is a nonprofit website built for the Umumazi Youth Development Initiative, presenting the organization's mission, programs and ways to get involved. It was developed through RenastereDev, the product studio I co-founded, as part of our client and community work.",
+      "UMYIDI is a nonprofit website built for the Umumazi Youth Development Initiative, presenting the organization's mission, programs and ways to get involved, with Flutterwave integrated for online donations. It was developed through RenastereDev, the product studio I co-founded, as part of our client and community work.",
     contribution: 'As part of RenastereDev\'s work on the project, I contributed to the website\'s build and delivery.',
     cardCopy:
-      "UMYIDI is a nonprofit website built for the Umumazi Youth Development Initiative, presenting the organization's mission, programs and community impact. Delivered through RenastereDev as part of our client and community work.",
+      "UMYIDI is a nonprofit website built for the Umumazi Youth Development Initiative, presenting the organization's mission, programs and community impact, with Flutterwave integrated for online donations. Delivered through RenastereDev as part of our client and community work.",
     role: null,
     type: 'Nonprofit / Community Website',
     year: null,
-    technologies: ['Web Development'], // TODO: confirm exact stack used
+    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Router', 'Flutterwave'],
     features: [],
     image: '/images/projects/umyidi/cover.png',
     frame: null,
@@ -179,7 +179,7 @@ export const communityWork = [
     caseStudy: false,
     award: null,
     client: 'Umumazi Youth Development Initiative',
-    stackShort: 'Web Development',
+    stackShort: 'React · Vite · Tailwind CSS',
   },
 ]
 
@@ -198,7 +198,7 @@ export const inDevelopment = [
       "I'm currently working on the technical structure of the application, including separating presentation from business logic, organizing product and image-related services, integrating Supabase and building the React application around reusable, maintainable components. Part of the product direction also explores image-based sizing, where a user's image could potentially help estimate clothing measurements or improve size recommendations — an area still being explored, not a completed or production-ready feature.",
     cardCopy:
       "iKlothing is a fashion technology application currently being rebuilt to explore a smarter online clothing-shopping experience. I'm rebuilding the application with React, Vite and Supabase, with a focus on clean application architecture, separated business logic and future sizing-related functionality.",
-    role: 'Co-Founder / Lead Product Engineer',
+    role: 'Software Developer & Co-Founder',
     type: 'Fashion Technology / E-Commerce Application',
     year: '2026',
     technologies: ['React', 'JavaScript', 'Vite', 'Supabase'],
@@ -223,6 +223,8 @@ export const previousWork = [
     slug: 'doodles-stick',
     title: 'Doodles Stick',
     type: 'Healthcare Website',
+    description:
+      'Doodles Stick was a client web project delivered as part of my earlier web development work. I worked on implementing the website experience and translating project requirements into a responsive web interface.',
     technologies: ['Angular', 'TypeScript', 'Firebase', 'Bootstrap'],
     image: '/images/projects/archive/doodles-stick.jpg',
     status: 'Previous Project',
@@ -231,6 +233,8 @@ export const previousWork = [
     slug: 'anita-harris-empowerment-foundation',
     title: 'Anita Harris Empowerment Foundation',
     type: 'Nonprofit Website',
+    description:
+      "Anita Harris was a client website delivered as part of my earlier web development work. The project involved turning the client's content and requirements into a functional web presence across desktop and mobile.",
     technologies: ['WordPress', 'Web Development'],
     image: '/images/projects/archive/anita-harris.jpg',
     status: 'Previous Project',
@@ -240,6 +244,8 @@ export const previousWork = [
     title: 'Heavy Duty Pub',
     type: 'Corporate Website',
     industry: 'Construction / Energy',
+    description:
+      "Heavy Duty Pub was a client web project focused on delivering a usable, responsive online experience based on the client's requirements. I contributed to implementing the website and its user-facing interface.",
     technologies: [],
     image: '/images/projects/archive/heavy-duty-pub.jpg',
     status: 'Previous Project',

@@ -1,62 +1,36 @@
 // Grouped skill listing. No proficiency ranking — presence in a list is not a claim of expertise.
+// Mirrors the categories on the current resume rather than listing every minor tool.
 export const skillGroups = [
   {
-    category: 'Front End',
-    items: [
-      'React',
-      'Next.js',
-      'Angular',
-      'JavaScript',
-      'TypeScript',
-      'HTML',
-      'CSS',
-      'Tailwind CSS',
-      'Bootstrap',
-      'Material UI',
-      'shadcn/ui',
-    ],
+    category: 'Languages',
+    items: ['JavaScript', 'TypeScript', 'SQL', 'Python', 'Java', 'Kotlin', 'Swift'],
+  },
+  {
+    category: 'Frontend',
+    items: ['React', 'Next.js', 'Angular', 'Tailwind CSS', 'Material UI'],
   },
   {
     category: 'Mobile',
-    items: ['React Native', 'Expo', 'Flutter', 'Swift', 'SwiftUI', 'Kotlin', 'Jetpack Compose'],
+    items: ['React Native', 'Expo', 'Flutter', 'Jetpack Compose', 'SwiftUI'],
   },
   {
-    category: 'Backend',
-    items: ['Node.js', 'Express', 'REST APIs', 'GraphQL', 'JWT Authentication', 'OAuth', 'PHP', 'Python', 'SQL'],
+    category: 'Backend & APIs',
+    items: ['Node.js', 'Express', 'REST APIs', 'GraphQL', 'JWT'],
   },
   {
-    category: 'Databases & Services',
-    items: ['PostgreSQL', 'MongoDB', 'MySQL', 'Firebase', 'Firestore', 'Redis'],
+    category: 'Databases',
+    items: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase / Firestore', 'Redis'],
   },
   {
-    category: 'Infrastructure & Deployment',
-    items: [
-      'Git',
-      'GitHub',
-      'GitLab',
-      'CI/CD',
-      'Docker',
-      'AWS (Cognito, S3, EC2)',
-      'Vercel',
-      'Firebase Hosting',
-      'Netlify',
-      'Render',
-    ],
-  },
-  {
-    category: 'Testing & Tools',
-    items: ['Jest', 'React Testing Library', 'Postman', 'Vite', 'Webpack', 'Nx Monorepo'],
-  },
-  {
-    category: 'Design & Product',
-    items: ['Figma', 'System Design', 'API Design', 'Responsive Design', 'Accessibility', 'Product Development'],
+    category: 'Cloud & DevOps',
+    items: ['AWS', 'Vercel', 'Firebase', 'Docker', 'GitHub Actions', 'GitLab CI/CD', 'Cloudinary'],
   },
 ]
 
 export const journey = [
   'Electrical & Electronics Engineering',
-  'Frontend Engineering',
-  'Enterprise Software',
+  'Frontend Development',
+  'Production / Enterprise Software',
   'Full-Stack Development',
   'Mobile Development',
   'Product Engineering',

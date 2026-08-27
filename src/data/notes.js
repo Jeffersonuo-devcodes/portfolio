@@ -28,12 +28,12 @@ export const notes = [
       { type: 'heading', id: 'the-actual-problem', text: 'What was actually happening' },
       {
         type: 'p',
-        text: "The backend and database were doing exactly what they were supposed to do. The problem was upstream of all of it: the images coming off the camera were large, and we were sending them over the network at full size before anything else happened. Every other part of the system was reacting correctly to a payload that shouldn't have been that big in the first place.",
+        text: "The backend and database were doing exactly what they were supposed to do. The problem was upstream of all of it: the images coming off the camera were large, and we were sending them over the network at full size before anything else happened — adding up to a 3-5 second delay on every scan. Every other part of the system was reacting correctly to a payload that shouldn't have been that big in the first place.",
       },
       { type: 'heading', id: 'the-fix', text: 'The fix' },
       {
         type: 'p',
-        text: "The fix wasn't a new service. It was resizing and compressing the image on the client before it left the device — smaller payload in, same backend, same database, same response shape.",
+        text: "The fix wasn't a new service. It was resizing and compressing the image on the client before it left the device — smaller payload in, same backend, same database, same response shape. That alone cut scan response time by roughly 60%.",
       },
       {
         type: 'diagramPair',

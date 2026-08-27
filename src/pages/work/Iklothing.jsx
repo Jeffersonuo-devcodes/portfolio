@@ -44,7 +44,9 @@ export default function Iklothing() {
             </h2>
           </div>
           <div className="lg:col-span-9 overflow-x-auto">
-            <ArchitectureDiagram layers={['React / Vite Frontend', 'Service Layer', 'Supabase']} />
+            <ArchitectureDiagram
+              layers={['UI / Components', 'Application / Business Logic', 'Services', 'Supabase / External Services']}
+            />
             <p className="text-sm text-[var(--color-ink-muted)] mt-6 max-w-xl">
               Business and data logic live in dedicated services rather than inside UI components
               — the same separation-of-concerns lesson from{' '}

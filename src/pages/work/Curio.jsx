@@ -120,12 +120,13 @@ export default function Curio() {
 
       <CaseStudySection index="10" title="Engineering Challenges">
         <p>
-          Large image payloads coming off the device camera were degrading performance in the
-          scan flow. Rather than adding a queue or a separate processing service, the fix was
-          identifying image size itself as the real bottleneck and introducing compression and
-          optimization on the client before the request went out. Building Curio also meant
-          structuring JWT-based authentication across separate parent and child profiles, and
-          designing the API to support the camera-to-content workflow end to end.
+          Oversized image payloads coming off the device camera were causing 3–5 second delays in
+          the scan flow. Rather than adding a queue or a separate processing service, the fix was
+          identifying image size itself as the real bottleneck and introducing client-side
+          compression before the request went out — cutting scan response time by roughly 60%.
+          Building Curio also meant structuring JWT-based authentication across separate parent
+          and child profiles, and designing the API to support the camera-to-content workflow end
+          to end.
         </p>
       </CaseStudySection>
 
