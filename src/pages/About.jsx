@@ -28,10 +28,10 @@ export default function About() {
 
         <RevealOnScroll delay={0.08} className="mt-10 max-w-2xl space-y-5 text-base md:text-lg text-[var(--color-ink-muted)] leading-relaxed">
           <p>
-            I'm a full-stack and mobile software engineer with a strong frontend foundation and
-            growing ownership across backend APIs, databases, cloud deployment and mobile
-            applications — from translating designs into responsive interfaces to building
-            authentication systems and database-backed products.
+            I'm a Full-Stack Web &amp; Mobile Developer based in Burnaby, BC, with a strong
+            frontend foundation and experience building applications across web, mobile, APIs,
+            databases, authentication and deployment — from translating designs into responsive
+            interfaces to building database-backed products.
           </p>
           <p>
             My journey has taken me through electrical engineering, front-end development,

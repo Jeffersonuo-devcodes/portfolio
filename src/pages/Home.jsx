@@ -47,8 +47,8 @@ export default function Home() {
               <span className="text-[var(--color-accent)]">idea to deployment.</span>
             </h1>
             <p className="mt-8 max-w-lg text-base md:text-lg text-[var(--color-ink-muted)] leading-relaxed">
-              I build web and mobile products across interfaces, APIs, databases and deployment,
-              with a strong foundation in frontend engineering.
+              I build responsive web and mobile applications from interface to backend — working
+              across React, React Native, Node.js, APIs, databases and deployment.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mt-11">
@@ -230,7 +230,7 @@ export default function Home() {
               Let's build something useful.
             </h2>
             <p className="mt-6 max-w-xl text-base md:text-lg text-[var(--color-ink-muted)] leading-relaxed">
-              I'm open to software engineering opportunities, interesting products and
+              I'm open to software development opportunities, interesting products and
               collaborations.
             </p>
 

@@ -8,7 +8,7 @@ import { useDocumentMeta } from '../hooks/useDocumentMeta'
 export default function Contact() {
   useDocumentMeta({
     title: `Contact | ${site.name}`,
-    description: "Let's build something useful — reach out about software engineering opportunities and collaborations.",
+    description: "Let's build something useful — reach out about software development opportunities and collaborations.",
   })
 
   const links = [
@@ -43,7 +43,7 @@ export default function Contact() {
           Let's build something useful.
         </h1>
         <p className="mt-6 text-base md:text-lg text-[var(--color-ink-muted)] leading-relaxed">
-          I'm interested in software engineering opportunities, thoughtful products, challenging
+          I'm interested in software development opportunities, thoughtful products, challenging
           development problems and collaborations worth building.
         </p>
         <p className="mt-4 text-sm text-[var(--color-ink-faint)]">Based in {site.location}.</p>

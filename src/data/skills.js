@@ -15,7 +15,7 @@ export const skillGroups = [
   },
   {
     category: 'Backend & APIs',
-    items: ['Node.js', 'Express', 'REST APIs', 'GraphQL', 'JWT'],
+    items: ['Node.js', 'Express', 'REST APIs', 'GraphQL', 'JWT', 'OAuth'],
   },
   {
     category: 'Databases',
@@ -23,7 +23,7 @@ export const skillGroups = [
   },
   {
     category: 'Cloud & DevOps',
-    items: ['AWS', 'Vercel', 'Firebase', 'Docker', 'GitHub Actions', 'GitLab CI/CD', 'Cloudinary'],
+    items: ['AWS', 'Vercel', 'Firebase', 'Docker', 'GitHub Actions', 'GitLab CI/CD', 'Cloudinary', 'Git'],
   },
 ]
 
